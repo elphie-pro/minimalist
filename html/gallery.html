@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Gallery - Minimal Photography</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./collections.html">Collections</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="gallery-header">
+            <h1>Gallery</h1>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="portraits">Portraits</button>
+            <button class="filter-btn" data-category="landscapes">Landscapes</button>
+            <button class="filter-btn" data-category="abstract">Abstract</button>
+            <button class="filter-btn" data-category="urban">Urban</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="closeLightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="prevImage">&lsaquo;</button>
+        <button class="lightbox-nav lightbox-next" id="nextImage">&rsaquo;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Minimal Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

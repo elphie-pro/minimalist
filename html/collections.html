@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/collections.css">
+    <title>Collections - Minimal Photography</title>
+</head>
+<body>
+    <nav>
+        <ul>
+           <li><a href="../index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./collections.html">Collections</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Collections</h1>
+            <p>Curated series exploring different themes and perspectives</p>
+        </div>
+
+        <div class="collections-grid" id="collectionsGrid"></div>
+    </div>
+
+    <div class="modal" id="collectionModal">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+            <div class="modal-gallery" id="modalGallery"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Minimal Photography. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/collections.js"></script>
+</body>
+</html>
